@@ -19,6 +19,10 @@ package helloworld;
  */
 public class HelloWorld {
 	public static void main(String[] args) {
-		System.out.println("Ola, Mundo");
+		String nome = "Mundo";
+		if (args.length > 0) {
+			nome = args[0];
+		}
+		System.out.println("Ola, " + nome);
 	}
 }
